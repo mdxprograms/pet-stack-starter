@@ -1,5 +1,8 @@
-body {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
+/* resets */
+@tailwind base;
+
+/* components */
+@tailwind components;
+
+/* utility classes */
+@tailwind utilities;

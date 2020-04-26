@@ -94,7 +94,11 @@ viewGuessInput : Html Msg
 viewGuessInput =
     div []
         [ p [] [ text "What's your guess?" ]
-        , input [ type_ "text", onInput GuessChange ] []
+        , input [ type_ "text", onInput GuessChange
+        , class "w-full p-2 border border-green-400 hover:border-green-600 focus:border-green-600 md:flex-1"
+        , class "text-center rounded shadow focus:outline-none focus:shadow-outline"
+        ]
+        []
         , button [ type_ "button", onClick GuessSubmitted ]
             [ text "Submit"
             ]
